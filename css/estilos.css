@@ -1,3 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Merriweather+Sans:wght@300;600&family=Montserrat:wght@200;400;600&display=swap');
+.titulo{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+.subtitulo{
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 600;
+}
+.texto{
+    font-family: 'Inder', sans-serif;
+    font-weight: 400;
+}
+
+
+
 .fondoHeader{
     background-repeat: no-repeat;
     background-size: cover;
@@ -79,7 +95,7 @@
 }
 .textoMain{
     text-align: center;
-    margin-top: 4%;
+    margin-top: 1%;
     padding-left: 5px;
     padding-right: 5px;
 }
