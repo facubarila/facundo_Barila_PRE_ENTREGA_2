@@ -1,0 +1,51 @@
+.header{
+    height: 100vh;
+    .rowx{
+        display: flex;
+        flex-direction: row;
+        justify-content: justify;
+        margin-bottom: 0;
+        background-color: rgba(171, 165, 165, 0.503);
+        .LogoNavBar{
+            height: 100px;
+        }
+        .navLi{
+            list-style: none;
+            .listStyle{
+                color: rgba(64, 62, 62, 0.768);
+                text-decoration: none;
+                font-size: 1.2rem;
+                margin-right: 5px;
+            }
+        }
+    }
+    .fondoHeader{
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 70vh;
+        background-position: center;
+        background-attachment: fixed;
+        .carousel{
+            margin-bottom: 4rem;
+            margin-top: 4rem;
+        }
+        .imgheader{
+            height: auto;
+        }
+        
+    }
+}
+@media (max-width: 992px){
+    .rowx{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-with: 993){
+    .rowx{
+        display: flex;
+        flex-direction: row;
+        justify-content: justify;
+    }
+}

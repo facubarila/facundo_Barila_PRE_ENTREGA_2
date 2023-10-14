@@ -1,0 +1,68 @@
+.main{
+    .titulo{
+        font-family: 'Montserrat', sans-serif;
+        font-weight: 400;
+    }
+    .h2Main{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .infoMain{
+        display: flex;
+        flex-direction: row;
+    }
+    .section1{
+        background-color: $color-primario;
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 100px;
+        .imagenMain{
+            height: 250px;
+        }
+        .textoMain{
+            text-align: center;
+            margin-top: 1%;
+            padding-left: 5px;
+            padding-right: 5px;
+            .texto{
+                font-family: 'Inder', sans-serif;
+                font-weight: 400;
+            }
+            .subtitulo{
+                font-family: 'Merriweather Sans', sans-serif;
+                font-weight: 600;
+            }
+        }
+    }
+    .divMain{
+        text-align: center;
+        margin-bottom: 30px;
+        .cards{
+            color: rgba(0, 0, 0, 0.519);
+            text-decoration: none;
+            font-size: 1.2rem;
+            margin-right: 5px;
+            margin-left: 5px;
+            .contenedorCard{
+                height: 295px;
+            }   
+        }
+    }
+}
+@media (max-width: 992px){
+    .main .h2Main{
+        display: none;
+    }
+    .main .section1{
+        display: none;
+    }
+    .divMain{
+        margin-top: 250px;
+    }
+}
+@media (min-with: 993){
+    .divMain{
+        height: 900px;
+    }
+}

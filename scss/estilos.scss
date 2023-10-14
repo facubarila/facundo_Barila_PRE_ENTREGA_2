@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Inder&family=Merriweather+Sans:wght@300;600&family=Montserrat:wght@200;400;600&display=swap');
+@import "variables.scss";
+@import "header.scss";
+@import "footer.scss";
+@import "main_index.scss";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.imagenCards{
+    size: cover;
+    height: 200px;
+}
+.conteinerImgProductos img{
+    height: 250px;
+    width: 250px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+.divProductos{
+    margin-bottom: 30PX;
+    text-align: center;
+}
+.divsCombos{
+    margin-left: 250px;
+}
+.contenedorCombos{
+    background-color:$color-primario;
+    margin-bottom: 20px;
+}
+@media (max-width: 992px){
+    .divsCombos{
+        margin-left: 50%;
+        margin-top: 100px;
+    }
+    .divProductos{
+        margin-top: 250px;
+    }    
+} 

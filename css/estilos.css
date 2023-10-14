@@ -1,169 +1,183 @@
-@import url('https://fonts.googleapis.com/css2?family=Inder&family=Merriweather+Sans:wght@300;600&family=Montserrat:wght@200;400;600&display=swap');
-.titulo{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 400;
+@import url("https://fonts.googleapis.com/css2?family=Inder&family=Merriweather+Sans:wght@300;600&family=Montserrat:wght@200;400;600&display=swap");
+.header {
+  height: 100vh;
 }
-.subtitulo{
-    font-family: 'Merriweather Sans', sans-serif;
-    font-weight: 600;
+.header .rowx {
+  display: flex;
+  flex-direction: row;
+  justify-content: justify;
+  margin-bottom: 0;
+  background-color: rgba(171, 165, 165, 0.503);
 }
-.texto{
-    font-family: 'Inder', sans-serif;
-    font-weight: 400;
+.header .rowx .LogoNavBar {
+  height: 100px;
+}
+.header .rowx .listStyle {
+  color: rgba(64, 62, 62, 0.768);
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 5px;
+}
+.header .fondoHeader {
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 70vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+.header .fondoHeader .imgheader {
+  height: auto;
 }
 
+.titulo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
 
+.subtitulo {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 600;
+}
 
-.fondoHeader{
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 70vh;
-    background-position: center;
-    background-attachment: fixed;
-    
+.texto {
+  font-family: "Inder", sans-serif;
+  font-weight: 400;
 }
-.LogoNavBar{
-    height: 100px;
+
+.navLi {
+  list-style: none;
 }
-.navLi{
-    list-style: none;
+
+.infoMain {
+  display: flex;
+  flex-direction: row;
 }
-.listStyle{
-    color: rgba(64, 62, 62, 0.768);
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin-right: 5px;
+
+.carousel {
+  margin-bottom: 4rem;
 }
-.imgheader{
-    height: auto;
+
+.h2Main {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-.header{
-    height: 100vh;
-}
-.infoMain{
+
+@media (max-width: 992px) {
+  .rowx {
+    width: 100%;
     display: flex;
-    flex-direction: row; 
+    flex-direction: column;
+  }
+  .h2Main {
+    display: none;
+  }
+  .section1 {
+    display: none;
+  }
+  .divMain {
+    margin-top: 250px;
+  }
+  .divsCombos {
+    margin-left: 50%;
+    margin-top: 100px;
+  }
+  .divProductos {
+    margin-top: 250px;
+  }
 }
-.carousel{
-    margin-bottom: 4rem
-}
-.rowx{
+@media (min-with: 993) {
+  .rowx {
     display: flex;
     flex-direction: row;
     justify-content: justify;
-    margin-bottom: 0;
-    background-color: rgba(171, 165, 165, 0.503);
+  }
+  .divMain {
+    height: 900px;
+  }
 }
-.h2Main{
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-
-}
-@media (max-width: 992px){
-    .rowx{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-    }
-    .h2Main{
-        display: none;
-    }
-    .section1{
-        display: none;
-    }
-    .divMain{
-        margin-top: 250px;
-    }
-    .divsCombos{
-        margin-left: 50%;
-        margin-top: 100px;
-    }
-    .divProductos{
-        margin-top: 250px;
-    }    
-}  
-@media (min-with: 993){
-    .rowx{
-        display: flex;
-        flex-direction: row;
-        justify-content: justify;
-    }
-    .divMain{
-        height: 900px;
-    }
-}
-.textoMain{
-    text-align: center;
-    margin-top: 1%;
-    padding-left: 5px;
-    padding-right: 5px;
-}
-.section1{
-    background-color: rgba(171, 165, 165, 0.503);
-    text-align: center;
-    margin-top: 0;
-    margin-bottom: 100px;
-}
-.imagenMain{
-    height: 250px;
-}
-.imagenCards{
-    size: cover;
-    height: 200px;
-}
-.divMain{
-    text-align: center;
-    margin-bottom: 30px;
+.textoMain {
+  text-align: center;
+  margin-top: 1%;
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
-.cards{
-    color: rgba(0, 0, 0, 0.519);
-    text-decoration: none;
-    font-size: 1.2rem;
-    margin-right: 5px;
-    margin-left: 5px;
-    
+.section1 {
+  background-color: rgba(171, 165, 165, 0.503);
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 100px;
 }
-.contenedorCard{
-    height: 295px;
+
+.imagenMain {
+  height: 250px;
 }
-.footer{
-    background-color: rgba(171, 165, 165, 0.503);
-    display: flex;
-    flex-direction: row;
-    height: 200px;
+
+.imagenCards {
+  size: cover;
+  height: 200px;
 }
-.divFooter{
-    width: 55px;
-    margin-left: 25px;
-    margin-bottom: 10px;
-    padding-top: 20px;
+
+.divMain {
+  text-align: center;
+  margin-bottom: 30px;
 }
-.icon{
-    font-size: 2rem;
-    margin-bottom: 10px;
-    color: black;
+
+.cards {
+  color: rgba(0, 0, 0, 0.519);
+  text-decoration: none;
+  font-size: 1.2rem;
+  margin-right: 5px;
+  margin-left: 5px;
 }
-.pFooter{
-    margin-top: 65px;
-    margin-left: 100px;
-    
+
+.contenedorCard {
+  height: 295px;
 }
-.conteinerImgProductos img{
-    height: 250px;
-    width: 250px;
-    object-fit: cover;
-    margin-bottom: 10px;
+
+.footer {
+  background-color: rgba(171, 165, 165, 0.503);
+  display: flex;
+  flex-direction: row;
+  height: 200px;
 }
-.divProductos{
-    margin-bottom: 30PX;
-    text-align: center;
+
+.divFooter {
+  width: 55px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  padding-top: 20px;
 }
-.divsCombos{
-    margin-left: 250px;
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: black;
 }
-.contenedorCombos{
-    background-color:rgba(171, 165, 165, 0.503);
-    margin-bottom: 20px;
+
+.pFooter {
+  margin-top: 65px;
+  margin-left: 100px;
 }
+
+.conteinerImgProductos img {
+  height: 250px;
+  width: 250px;
+  object-fit: cover;
+  margin-bottom: 10px;
+}
+
+.divProductos {
+  margin-bottom: 30PX;
+  text-align: center;
+}
+
+.divsCombos {
+  margin-left: 250px;
+}
+
+.contenedorCombos {
+  background-color: rgba(171, 165, 165, 0.503);
+  margin-bottom: 20px;
+}/*# sourceMappingURL=estilos.css.map */
