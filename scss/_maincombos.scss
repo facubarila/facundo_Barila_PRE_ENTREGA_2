@@ -1,0 +1,13 @@
+.divsCombos{
+    margin-left: 250px;
+}
+.contenedorCombos{
+    background-color:$color-primario;
+    margin-bottom: 20px;
+}
+@media (max-width: 992px){
+    .divsCombos{
+        margin-left: 50%;
+        margin-top: 100px;
+    }  
+} 

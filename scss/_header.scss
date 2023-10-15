@@ -1,11 +1,11 @@
 .header{
     height: 100vh;
     .rowx{
+        background-color: $color-primario;
         display: flex;
         flex-direction: row;
         justify-content: justify;
         margin-bottom: 0;
-        background-color: rgba(171, 165, 165, 0.503);
         .LogoNavBar{
             height: 100px;
         }

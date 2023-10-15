@@ -1,0 +1,15 @@
+.divProductos{
+    margin-bottom: 30PX;
+    text-align: center;
+    .conteinerImgProductos img{
+        height: 250px;
+        width: 250px;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 992px){
+    .divProductos{
+        margin-top: 250px;
+    }  
+}

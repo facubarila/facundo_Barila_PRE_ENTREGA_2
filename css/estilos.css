@@ -3,16 +3,19 @@
   height: 100vh;
 }
 .header .rowx {
+  background-color: rgba(171, 165, 165, 0.503);
   display: flex;
   flex-direction: row;
   justify-content: justify;
   margin-bottom: 0;
-  background-color: rgba(171, 165, 165, 0.503);
 }
 .header .rowx .LogoNavBar {
   height: 100px;
 }
-.header .rowx .listStyle {
+.header .rowx .navLi {
+  list-style: none;
+}
+.header .rowx .navLi .listStyle {
   color: rgba(64, 62, 62, 0.768);
   text-decoration: none;
   font-size: 1.2rem;
@@ -25,42 +28,12 @@
   background-position: center;
   background-attachment: fixed;
 }
+.header .fondoHeader .carousel {
+  margin-bottom: 4rem;
+  margin-top: 4rem;
+}
 .header .fondoHeader .imgheader {
   height: auto;
-}
-
-.titulo {
-  font-family: "Montserrat", sans-serif;
-  font-weight: 400;
-}
-
-.subtitulo {
-  font-family: "Merriweather Sans", sans-serif;
-  font-weight: 600;
-}
-
-.texto {
-  font-family: "Inder", sans-serif;
-  font-weight: 400;
-}
-
-.navLi {
-  list-style: none;
-}
-
-.infoMain {
-  display: flex;
-  flex-direction: row;
-}
-
-.carousel {
-  margin-bottom: 4rem;
-}
-
-.h2Main {
-  text-align: center;
-  margin-top: 20px;
-  margin-bottom: 20px;
 }
 
 @media (max-width: 992px) {
@@ -69,22 +42,6 @@
     display: flex;
     flex-direction: column;
   }
-  .h2Main {
-    display: none;
-  }
-  .section1 {
-    display: none;
-  }
-  .divMain {
-    margin-top: 250px;
-  }
-  .divsCombos {
-    margin-left: 50%;
-    margin-top: 100px;
-  }
-  .divProductos {
-    margin-top: 250px;
-  }
 }
 @media (min-with: 993) {
   .rowx {
@@ -92,87 +49,90 @@
     flex-direction: row;
     justify-content: justify;
   }
-  .divMain {
-    height: 900px;
-  }
 }
-.textoMain {
+.main .titulo {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+}
+.main .h2Main {
   text-align: center;
-  margin-top: 1%;
-  padding-left: 5px;
-  padding-right: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
-
-.section1 {
+.main .infoMain {
+  display: flex;
+  flex-direction: row;
+}
+.main .section1 {
   background-color: rgba(171, 165, 165, 0.503);
   text-align: center;
   margin-top: 0;
   margin-bottom: 100px;
 }
-
-.imagenMain {
+.main .section1 .imagenMain {
   height: 250px;
 }
-
-.imagenCards {
-  size: cover;
-  height: 200px;
+.main .section1 .textoMain {
+  text-align: center;
+  margin-top: 1%;
+  padding-left: 5px;
+  padding-right: 5px;
 }
-
-.divMain {
+.main .section1 .textoMain .texto {
+  font-family: "Inder", sans-serif;
+  font-weight: 400;
+}
+.main .section1 .textoMain .subtitulo {
+  font-family: "Merriweather Sans", sans-serif;
+  font-weight: 600;
+}
+.main .divMain {
   text-align: center;
   margin-bottom: 30px;
 }
-
-.cards {
+.main .divMain .cards {
   color: rgba(0, 0, 0, 0.519);
   text-decoration: none;
   font-size: 1.2rem;
   margin-right: 5px;
   margin-left: 5px;
 }
-
-.contenedorCard {
+.main .divMain .cards .contenedorCard {
   height: 295px;
 }
 
-.footer {
-  background-color: rgba(171, 165, 165, 0.503);
-  display: flex;
-  flex-direction: row;
-  height: 200px;
+@media (max-width: 992px) {
+  .main .h2Main {
+    display: none;
+  }
+  .main .section1 {
+    display: none;
+  }
+  .divMain {
+    margin-top: 250px;
+  }
 }
-
-.divFooter {
-  width: 55px;
-  margin-left: 25px;
-  margin-bottom: 10px;
-  padding-top: 20px;
+@media (min-with: 993) {
+  .divMain {
+    height: 900px;
+  }
 }
-
-.icon {
-  font-size: 2rem;
-  margin-bottom: 10px;
-  color: black;
+.divProductos {
+  margin-bottom: 30PX;
+  text-align: center;
 }
-
-.pFooter {
-  margin-top: 65px;
-  margin-left: 100px;
-}
-
-.conteinerImgProductos img {
+.divProductos .conteinerImgProductos img {
   height: 250px;
   width: 250px;
   object-fit: cover;
   margin-bottom: 10px;
 }
 
-.divProductos {
-  margin-bottom: 30PX;
-  text-align: center;
+@media (max-width: 992px) {
+  .divProductos {
+    margin-top: 250px;
+  }
 }
-
 .divsCombos {
   margin-left: 250px;
 }
@@ -180,4 +140,43 @@
 .contenedorCombos {
   background-color: rgba(171, 165, 165, 0.503);
   margin-bottom: 20px;
+}
+
+@media (max-width: 992px) {
+  .divsCombos {
+    margin-left: 50%;
+    margin-top: 100px;
+  }
+}
+.footer {
+  background-color: rgba(171, 165, 165, 0.503);
+  display: flex;
+  flex-direction: row;
+  height: 200px;
+}
+.footer .divFooter {
+  width: 55px;
+  margin-left: 25px;
+  margin-bottom: 10px;
+  padding-top: 20px;
+}
+.footer .divFooter .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: black;
+}
+.footer .pFooter {
+  margin-top: 65px;
+  margin-left: 100px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.imagenCards {
+  height: 200px;
+  size: cover;
 }/*# sourceMappingURL=estilos.css.map */
