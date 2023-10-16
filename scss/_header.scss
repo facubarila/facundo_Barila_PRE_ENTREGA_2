@@ -1,21 +1,27 @@
 .header{
-    height: 100vh;
+    height: 150px;
+    background-color: $color-primario;
+    display: flex;
+    margin-bottom: 50px;
+    .LogoNavBar{
+        height: 100px;
+        margin-top: 20px;
+        margin-left: 20px;
+    }
     .rowx{
-        background-color: $color-primario;
         display: flex;
         flex-direction: row;
         justify-content: justify;
         margin-bottom: 0;
-        .LogoNavBar{
-            height: 100px;
-        }
+        margin-top: 50px;
+        margin-left: 170px;
         .navLi{
             list-style: none;
             .listStyle{
                 color: rgba(64, 62, 62, 0.768);
                 text-decoration: none;
                 font-size: 1.2rem;
-                margin-right: 5px;
+                margin-right: 50px;
             }
         }
     }
@@ -35,7 +41,16 @@
         
     }
 }
+.headerBurguer{
+    background-color: $color-primario;
+    .LogoBurguer{
+        height: 70px;
+    }
+}
 @media (max-width: 992px){
+    .header{
+        display: none;
+    }
     .rowx{
         width: 100%;
         display: flex;
