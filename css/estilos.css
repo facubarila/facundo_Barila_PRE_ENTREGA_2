@@ -134,15 +134,19 @@
   }
 }
 .divProductos {
-  margin-bottom: 30PX;
-  text-align: center;
-  margin-top: 100px;
+  background-color: rgba(171, 165, 165, 0.5019607843);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
 .divProductos .conteinerImgProductos img {
   height: 250px;
   width: 250px;
   object-fit: cover;
   margin-bottom: 10px;
+  margin-top: 10px;
 }
 
 @media (max-width: 992px) {
@@ -169,6 +173,33 @@
     margin-top: 100px;
   }
 }
+.bg-color {
+  background-color: rgba(171, 165, 165, 0.5019607843) !important;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.bg-color .logoNosotros {
+  margin-top: 25px;
+  margin-bottom: 25px;
+  height: 80px;
+}
+
+.bg-primario {
+  background-color: rgba(171, 165, 165, 0.5019607843);
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.bg-primario .divForm {
+  width: 60%;
+}
+
 .footer {
   background-color: rgba(171, 165, 165, 0.5019607843);
   display: flex;

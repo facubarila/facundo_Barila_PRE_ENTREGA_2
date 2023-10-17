@@ -1,0 +1,10 @@
+.bg-primario{
+    background-color: $color-primario;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    .divForm{
+        width: 60%;
+    }
+}
