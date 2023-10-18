@@ -135,18 +135,19 @@
 }
 .divProductos {
   background-color: rgba(171, 165, 165, 0.5019607843);
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
   margin-top: 20px;
   margin-bottom: 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
 }
 .divProductos .conteinerImgProductos img {
   height: 250px;
   width: 250px;
   object-fit: cover;
-  margin-bottom: 10px;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 992px) {
@@ -160,11 +161,8 @@
   margin-top: 20px;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   flex-wrap: wrap;
-}
-.contenedorCombos .divCombos {
-  height: 100px;
+  text-align: center;
 }
 
 @media (max-width: 992px) {
