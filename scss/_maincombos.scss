@@ -1,9 +1,8 @@
 .contenedorCombos{
+    @include contenedoflexible(column);
     background-color:$color-primario;
     margin-bottom: 20px;
     margin-top: 20px;
-    display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
     align-items: center;
     .imgCombos{
@@ -13,6 +12,12 @@
     }
     .pCombos{
         margin-top: 5px;
+        .fuente{
+            font-family: map-get($mapa-fuentes, fuente-subtitulo);
+        }
+        .fuenteDos{
+            font-family: map-get($mapa-fuentes, fuente-texto);
+        }
     }
 }
 @media (max-width: 992px){

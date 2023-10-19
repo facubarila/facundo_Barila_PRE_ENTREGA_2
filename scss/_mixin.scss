@@ -1,0 +1,4 @@
+@mixin contenedoflexible ($direccion){
+    display: flex;
+    flex-direction: $direccion;
+}

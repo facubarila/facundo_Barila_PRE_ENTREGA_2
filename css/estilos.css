@@ -67,7 +67,7 @@
   }
 }
 .main .titulo {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat";
   font-weight: 400;
 }
 .main .h2Main {
@@ -95,11 +95,11 @@
   padding-right: 5px;
 }
 .main .section1 .textoMain .texto {
-  font-family: "Inder", sans-serif;
+  font-family: "Inder";
   font-weight: 400;
 }
 .main .section1 .textoMain .subtitulo {
-  font-family: "Merriweather Sans", sans-serif;
+  font-family: "Merriweather Sans";
   font-weight: 600;
 }
 .main .divMain {
@@ -134,11 +134,11 @@
   }
 }
 .divProductos {
+  display: flex;
+  flex-direction: row;
   background-color: rgba(171, 165, 165, 0.5019607843);
   margin-top: 20px;
   margin-bottom: 20px;
-  display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   text-align: center;
 }
@@ -153,14 +153,19 @@
 @media (max-width: 992px) {
   .divProductos {
     margin-top: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
   }
 }
 .contenedorCombos {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(171, 165, 165, 0.5019607843);
   margin-bottom: 20px;
   margin-top: 20px;
-  display: flex;
-  flex-direction: column;
   flex-wrap: wrap;
   align-items: center;
 }
@@ -172,6 +177,12 @@
 .contenedorCombos .pCombos {
   margin-top: 5px;
 }
+.contenedorCombos .pCombos .fuente {
+  font-family: "Merriweather Sans";
+}
+.contenedorCombos .pCombos .fuenteDos {
+  font-family: "Inder";
+}
 
 @media (max-width: 992px) {
   .divsCombos {
@@ -180,9 +191,9 @@
   }
 }
 .bg-color {
-  background-color: rgba(171, 165, 165, 0.5019607843) !important;
   display: flex;
   flex-direction: column;
+  background-color: rgba(171, 165, 165, 0.5019607843) !important;
   justify-content: center;
   overflow: hidden;
   text-align: center;
@@ -193,6 +204,9 @@
   margin-top: 25px;
   margin-bottom: 25px;
   height: 80px;
+}
+.bg-color .fuenteDos {
+  font-family: "Inder";
 }
 
 .bg-primario {

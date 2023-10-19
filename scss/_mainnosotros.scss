@@ -1,7 +1,6 @@
 .bg-color{
+    @include contenedoflexible(column);
     background-color: $color-primario !important; 
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     overflow: hidden;
     text-align: center;
@@ -11,5 +10,8 @@
         margin-top: 25px;
         margin-bottom: 25px;
         height: 80px;
+    }
+    .fuenteDos{
+        font-family: map-get($mapa-fuentes, fuente-texto );
     }
 }
