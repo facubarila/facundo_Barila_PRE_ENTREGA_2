@@ -105,16 +105,26 @@
 .main .divMain {
   text-align: center;
   margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  height: auto;
 }
 .main .divMain .cards {
+  height: 350px;
+  width: 20%;
   color: rgba(0, 0, 0, 0.519);
   text-decoration: none;
   font-size: 1.2rem;
-  margin-right: 5px;
-  margin-left: 5px;
+  margin-right: 70px;
+  margin-left: 70px;
+  background-color: #fff;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
 }
 .main .divMain .cards .contenedorCard {
-  height: 295px;
+  height: 179px;
 }
 
 @media (max-width: 992px) {
@@ -125,12 +135,20 @@
     display: none;
   }
   .divMain {
-    margin-top: 250px;
+    margin-top: 30px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .divMain .cards {
+    display: flex;
   }
 }
 @media (min-with: 993) {
   .divMain {
-    height: 900px;
+    height: auto;
+    flex-wrap: wrap;
   }
 }
 .divProductos {
@@ -250,9 +268,4 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-.imagenCards {
-  height: 200px;
-  size: cover;
 }/*# sourceMappingURL=estilos.css.map */
