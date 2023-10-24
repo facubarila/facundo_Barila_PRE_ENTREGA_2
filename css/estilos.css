@@ -27,6 +27,9 @@
   font-size: 1.2rem;
   margin-right: 50px;
 }
+.header .rowx .navLi .hoverHeader:hover {
+  border-radius: solid 5%;
+}
 .header .fondoHeader {
   background-repeat: no-repeat;
   background-size: cover;
@@ -126,6 +129,10 @@
 .main .divMain .cards .contenedorCard {
   height: 179px;
 }
+.main .divMain .hover:hover {
+  filter: grayscale(1);
+  transition: all 0.5s;
+}
 
 @media (max-width: 992px) {
   .main .h2Main {
@@ -135,14 +142,18 @@
     display: none;
   }
   .divMain {
-    margin-top: 30px;
-    height: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    max-width: 100vh;
+    margin-top: 30px;
+    height: auto;
   }
   .divMain .cards {
     display: flex;
+    height: auto;
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 @media (min-with: 993) {

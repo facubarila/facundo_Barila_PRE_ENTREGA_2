@@ -58,6 +58,10 @@
                 height: 179px;
             }   
         }
+        .hover:hover{
+            filter: grayscale(1);
+            transition: all 0.5s;
+        }
     }
 }
 @media (max-width: 992px){
@@ -68,15 +72,19 @@
         display: none;
     }
     .divMain{
-        margin-top: 30px;
-        height: auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
+         max-width: 100vh;
+        margin-top: 30px;
+        height: auto;
         .cards{
-          display: flex;  
+         display: flex;
+        height: auto;
+        margin-left: 0;
+        margin-right: 0;
         }
-    }
+    }     
 }
 @media (min-with: 993){
     .divMain{
