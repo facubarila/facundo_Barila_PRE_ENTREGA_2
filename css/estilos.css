@@ -105,6 +105,16 @@
   font-family: "Merriweather Sans";
   font-weight: 600;
 }
+.main .divResponsiv {
+  background-image: url(../assets/img/camara_blancoynegro.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin-top: 30px;
+}
 .main .divMain {
   text-align: center;
   margin-bottom: 30px;
@@ -156,10 +166,12 @@
     margin-right: 0;
   }
 }
-@media (min-with: 993) {
-  .divMain {
+@media (min-width: 993px) {
+  .main .divResponsiv {
+    display: none;
+  }
+  .main .divMain {
     height: auto;
-    flex-wrap: wrap;
   }
 }
 .divProductos {

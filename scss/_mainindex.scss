@@ -35,6 +35,16 @@
             }
         }
     }
+    .divResponsiv{
+        background-image: url(../assets/img/camara_blancoynegro.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        margin-top: 30px;
+    }
     .divMain{
         text-align: center;
         margin-bottom: 30px;
@@ -86,9 +96,11 @@
         }
     }     
 }
-@media (min-with: 993){
-    .divMain{
-        height: auto;
-        flex-wrap: wrap;
+@media (min-width: 993px){
+    .main .divResponsiv{
+        display: none;
+    }
+    .main .divMain{
+        height: auto;  
     }
 }
