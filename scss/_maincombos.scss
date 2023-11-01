@@ -1,3 +1,17 @@
+.titulo{
+    font-family: map-get($mapa-fuentes, fuente-titulo);
+        font-weight: 400;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
+.texto{
+    font-family: map-get($mapa-fuentes, fuente-texto);
+    font-weight: 400;
+    text-align: left;
+    display: flex;
+    justify-content: center
+}
 .contenedorCombos{
     @include contenedoflexible(column);
     background-color:$color-primario;
@@ -5,13 +19,16 @@
     margin-top: 20px;
     flex-wrap: wrap;
     align-items: center;
+    .cardsCombos{
+        background-color: $color-gradiente;
+    }
     .imgCombos{
         margin-top: 10px;
-        margin-left: 5px;
+        margin-left: 52px;
         margin-bottom: 10px;
     }
     .pCombos{
-        margin-top: 5px;
+        margin-top: 20px;
         .fuente{
             font-family: map-get($mapa-fuentes, fuente-subtitulo);
         }
@@ -20,9 +37,18 @@
         }
     }
 }
+.videoCombos{
+    width: 80%;
+    border-radius: 2%;
+}
 @media (max-width: 992px){
+    .contenedorCombos .imgCombos{
+        max-width: 40%;
+        display: flex;
+        margin-left: 0;
+    }
     .divsCombos{
         margin-left: 50%;
         margin-top: 100px;
-    }  
+    }
 } 

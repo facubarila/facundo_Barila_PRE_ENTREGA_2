@@ -1,3 +1,10 @@
+.titulo{
+    font-family: map-get($mapa-fuentes, fuente-titulo);
+        font-weight: 400;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+}
 .bg-primario{
     background-color: $color-primario;
     display: flex;
@@ -10,6 +17,11 @@
     .Imput{
         margin-left: 10px;
         margin-right: 20px;
-        
+        background-color: rgba(0, 0, 0, 0.149);   
+    }
+    .limpiar{
+        margin-left: 10px;
+        margin-right: 20px;
+        background-color: rgba(156, 3, 3, 0.564);
     }
 }

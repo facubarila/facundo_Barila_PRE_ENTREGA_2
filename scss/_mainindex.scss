@@ -2,8 +2,6 @@
     .titulo{
         font-family: map-get($mapa-fuentes, fuente-titulo);
         font-weight: 400;
-    }
-    .h2Main{
         text-align: center;
         margin-top: 20px;
         margin-bottom: 20px;
@@ -28,6 +26,7 @@
             .texto{
                 font-family: map-get($mapa-fuentes, fuente-texto);
                 font-weight: 400;
+                text-align: left;
             }
             .subtitulo{
                 font-family: map-get($mapa-fuentes, fuente-subtitulo);
@@ -36,6 +35,7 @@
         }
     }
     .divResponsiv{
+        color: #fff;
         background-image: url(../assets/img/camara_blancoynegro.jpg);
         background-size: cover;
         background-repeat: no-repeat;
@@ -64,13 +64,15 @@
             background-clip: border-box;
             border: 1px solid rgba(0, 0, 0, 0.125);
             border-radius: 0.25rem;
+            filter: grayscale(1);
             .contenedorCard{
                 height: 179px;
-            }   
+                object-fit: cover;
+            }
         }
         .hover:hover{
-            filter: grayscale(1);
-            transition: all 0.5s;
+            filter: grayscale(0);
+            transition: all 0.3s;
         }
     }
 }
@@ -82,14 +84,12 @@
         display: none;
     }
     .divMain{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
+        flex-wrap: wrap;
         margin-top: 30px;
         height: auto;
         .cards{
-            margin-left: 0px;
-            margin-right: 0px;
+            width: 60%;
+            height: auto;
         }
     }     
 }

@@ -72,8 +72,6 @@
 .main .titulo {
   font-family: "Montserrat";
   font-weight: 400;
-}
-.main .h2Main {
   text-align: center;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -100,12 +98,14 @@
 .main .section1 .textoMain .texto {
   font-family: "Inder";
   font-weight: 400;
+  text-align: left;
 }
 .main .section1 .textoMain .subtitulo {
   font-family: "Merriweather Sans";
   font-weight: 600;
 }
 .main .divResponsiv {
+  color: #fff;
   background-image: url(../assets/img/camara_blancoynegro.jpg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -135,13 +135,15 @@
   background-clip: border-box;
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
+  filter: grayscale(1);
 }
 .main .divMain .cards .contenedorCard {
   height: 179px;
+  object-fit: cover;
 }
 .main .divMain .hover:hover {
-  filter: grayscale(1);
-  transition: all 0.5s;
+  filter: grayscale(0);
+  transition: all 0.3s;
 }
 
 @media (max-width: 992px) {
@@ -152,15 +154,13 @@
     display: none;
   }
   .divMain {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-wrap: wrap;
     margin-top: 30px;
     height: auto;
   }
   .divMain .cards {
-    margin-left: 0px;
-    margin-right: 0px;
+    width: 60%;
+    height: auto;
   }
 }
 @media (min-width: 993px) {
@@ -171,6 +171,14 @@
     height: auto;
   }
 }
+.titulo {
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .divProductos {
   display: flex;
   flex-direction: row;
@@ -186,6 +194,7 @@
   object-fit: cover;
   margin-top: 10px;
   margin-bottom: 10px;
+  border-radius: 2%;
 }
 
 @media (max-width: 992px) {
@@ -198,6 +207,22 @@
     justify-content: center;
   }
 }
+.titulo {
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.texto {
+  font-family: "Inder";
+  font-weight: 400;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+}
+
 .contenedorCombos {
   display: flex;
   flex-direction: column;
@@ -207,13 +232,16 @@
   flex-wrap: wrap;
   align-items: center;
 }
+.contenedorCombos .cardsCombos {
+  background-color: #e1dbdb;
+}
 .contenedorCombos .imgCombos {
   margin-top: 10px;
-  margin-left: 5px;
+  margin-left: 52px;
   margin-bottom: 10px;
 }
 .contenedorCombos .pCombos {
-  margin-top: 5px;
+  margin-top: 20px;
 }
 .contenedorCombos .pCombos .fuente {
   font-family: "Merriweather Sans";
@@ -222,7 +250,17 @@
   font-family: "Inder";
 }
 
+.videoCombos {
+  width: 80%;
+  border-radius: 2%;
+}
+
 @media (max-width: 992px) {
+  .contenedorCombos .imgCombos {
+    max-width: 40%;
+    display: flex;
+    margin-left: 0;
+  }
   .divsCombos {
     margin-left: 50%;
     margin-top: 100px;
@@ -247,6 +285,14 @@
   font-family: "Inder";
 }
 
+.titulo {
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
 .bg-primario {
   background-color: rgba(171, 165, 165, 0.5019607843);
   display: flex;
@@ -260,6 +306,12 @@
 .bg-primario .Imput {
   margin-left: 10px;
   margin-right: 20px;
+  background-color: rgba(0, 0, 0, 0.149);
+}
+.bg-primario .limpiar {
+  margin-left: 10px;
+  margin-right: 20px;
+  background-color: rgba(156, 3, 3, 0.564);
 }
 
 .footer {
@@ -282,6 +334,11 @@
 .footer .pFooter {
   margin-top: 65px;
   margin-left: 100px;
+}
+
+.error {
+  background-image: url(../assets/img/camera-3244872_1920.jpg);
+  height: 100vh;
 }
 
 * {
