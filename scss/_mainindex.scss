@@ -70,10 +70,14 @@
                 height: auto;
             }
         }
-        .hover:hover{
-            filter: grayscale(0);
-            transition: all 0.3s;
-        }
+    }
+    .hover:hover{
+        filter: grayscale(0);
+        transition: all 0.3s;
+    }
+    .cardsResponsive{
+        color: black;
+        filter: grayscale(1);
     }   
 }
 @media (max-width: 992px){
@@ -83,13 +87,8 @@
     .main .section1{
         display: none;
     }
-    .divMain{
-        flex-direction: column;
-        margin-top: 50px;
-        .cards{
-          width: 300px;
-          height: auto;
-        }
+    .divMain .cards{
+        display: none;
     }     
 }
 @media (min-width: 993px){
