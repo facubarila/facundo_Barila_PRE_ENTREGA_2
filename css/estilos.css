@@ -137,9 +137,9 @@
   border-radius: 0.25rem;
   filter: grayscale(1);
 }
-.main .divMain .cards .contenedorCard {
-  height: 179px;
-  object-fit: cover;
+.main .divMain .cards .divCards {
+  width: 100%;
+  height: auto;
 }
 .main .divMain .hover:hover {
   filter: grayscale(0);
@@ -154,12 +154,11 @@
     display: none;
   }
   .divMain {
-    flex-wrap: wrap;
-    margin-top: 30px;
-    height: auto;
+    flex-direction: column;
+    margin-top: 50px;
   }
   .divMain .cards {
-    width: 60%;
+    width: 300px;
     height: auto;
   }
 }
@@ -235,18 +234,18 @@
 .contenedorCombos .cardsCombos {
   background-color: #e1dbdb;
 }
-.contenedorCombos .imgCombos {
+.contenedorCombos .cardsCombos .imgCombos {
   margin-top: 10px;
   margin-left: 52px;
   margin-bottom: 10px;
 }
-.contenedorCombos .pCombos {
+.contenedorCombos .cardsCombos .pCombos {
   margin-top: 20px;
 }
-.contenedorCombos .pCombos .fuente {
+.contenedorCombos .cardsCombos .pCombos .fuente {
   font-family: "Merriweather Sans";
 }
-.contenedorCombos .pCombos .fuenteDos {
+.contenedorCombos .cardsCombos .pCombos .fuenteDos {
   font-family: "Inder";
 }
 
@@ -256,10 +255,10 @@
 }
 
 @media (max-width: 992px) {
-  .contenedorCombos .imgCombos {
+  .cardsCombos .imgCombos {
     max-width: 40%;
-    display: flex;
-    margin-left: 0;
+    justify-items: center;
+    margin-right: 50px;
   }
   .divsCombos {
     margin-left: 50%;
@@ -337,8 +336,12 @@
 }
 
 .error {
-  background-image: url(../assets/img/camera-3244872_1920.jpg);
+  background-color: black;
+}
+.error .imgerror {
   height: 100vh;
+  display: flex;
+  justify-content: center;
 }
 
 * {

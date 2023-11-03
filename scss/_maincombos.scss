@@ -21,19 +21,19 @@
     align-items: center;
     .cardsCombos{
         background-color: $color-gradiente;
-    }
-    .imgCombos{
-        margin-top: 10px;
-        margin-left: 52px;
-        margin-bottom: 10px;
-    }
-    .pCombos{
-        margin-top: 20px;
-        .fuente{
-            font-family: map-get($mapa-fuentes, fuente-subtitulo);
+        .imgCombos{
+            margin-top: 10px;
+            margin-left: 52px;
+            margin-bottom: 10px;
         }
-        .fuenteDos{
-            font-family: map-get($mapa-fuentes, fuente-texto);
+        .pCombos{
+            margin-top: 20px;
+            .fuente{
+                font-family: map-get($mapa-fuentes, fuente-subtitulo);
+            }
+            .fuenteDos{
+                font-family: map-get($mapa-fuentes, fuente-texto);
+            }
         }
     }
 }
@@ -41,14 +41,15 @@
     width: 80%;
     border-radius: 2%;
 }
-@media (max-width: 992px){
-    .contenedorCombos .imgCombos{
+@media (max-width: 992px){     
+    .cardsCombos .imgCombos{
         max-width: 40%;
-        display: flex;
-        margin-left: 0;
+        justify-items: center;
+        margin-right: 50px;
     }
+    
     .divsCombos{
         margin-left: 50%;
         margin-top: 100px;
-    }
-} 
+    }  
+}

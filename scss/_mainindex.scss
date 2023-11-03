@@ -65,16 +65,16 @@
             border: 1px solid rgba(0, 0, 0, 0.125);
             border-radius: 0.25rem;
             filter: grayscale(1);
-            .contenedorCard{
-                height: 179px;
-                object-fit: cover;
+            .divCards{
+                width: 100%;
+                height: auto;
             }
         }
         .hover:hover{
             filter: grayscale(0);
             transition: all 0.3s;
         }
-    }
+    }   
 }
 @media (max-width: 992px){
     .main .h2Main{
@@ -84,12 +84,11 @@
         display: none;
     }
     .divMain{
-        flex-wrap: wrap;
-        margin-top: 30px;
-        height: auto;
+        flex-direction: column;
+        margin-top: 50px;
         .cards{
-            width: 60%;
-            height: auto;
+          width: 300px;
+          height: auto;
         }
     }     
 }
